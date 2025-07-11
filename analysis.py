@@ -4,6 +4,7 @@ from PyQt5.QtCore import QThread, pyqtSignal
 from config import SAMPLE_RATE
 
 try:
+    from chordlib.profiles.detector import ChordTemplateMatcher
     from chordlib.features.pcp import extract_pcp
     from chordlib.features.beats import track_beats
     from chordlib.detection.beat_synchronous import ChordsDetectionBeats
