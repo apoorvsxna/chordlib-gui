@@ -1,5 +1,3 @@
-# chordlib/features/peaks.py
-
 import numpy as np
 from .._internal.peak_finding import find_peaks
 from typing import Tuple

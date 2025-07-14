@@ -1,0 +1,6 @@
+numpy
+scipy
+numba
+librosa
+PyQt5
+pyqtgraph

@@ -1,10 +1,7 @@
-# chordlib/profiles/detector.py
-
 import numpy as np
 import math
 from typing import Tuple, List, Dict
 
-# OLD CLASS NAME: KeyDetector
 class ChordTemplateMatcher:
     """
     Detects the best-matching chord (root and scale) for a given PCP/HPCP
@@ -20,7 +17,7 @@ class ChordTemplateMatcher:
         use_majmin: bool = False,
         pcp_size: int = 12
     ):
-        # Configuration
+        # Config
         self.profile_type = profile_type
         self.use_polyphony = use_polyphony
         self.use_three_chords = use_three_chords
@@ -38,11 +35,8 @@ class ChordTemplateMatcher:
         }
         self.other_profiles: Dict[str, Tuple[List[float], List[float], List[float]]] = {}
 
-        # Note names for output
-        # OLD: self._keys
         self._note_names = ['A','Bb','B','C','C#','D','Eb','E','F','F#','G','Ab']
 
-        # Build full-size profiles and stats
         self._build_profiles()
 
     def _build_profiles(self):
