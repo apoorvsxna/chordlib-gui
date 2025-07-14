@@ -1,4 +1,4 @@
-APP_TITLE = "Chord Analyzer"
+APP_TITLE = "Chordlib-GUI"
 SAMPLE_RATE = 44100
 NOTE_NAMES = ["A", "Bb", "B", "C", "C#", "D", "Eb", "E", "F", "F#", "G", "Ab"]
 UPDATE_INTERVAL_MS = 16
